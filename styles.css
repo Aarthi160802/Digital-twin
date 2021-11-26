@@ -1,0 +1,11 @@
+#thresholdForm {
+  float: right;
+}
+
+#thresholdInput {
+  min-width: 10em;
+}
+
+#thresholdSubmitButton {
+  padding: 0 0.5em;
+}

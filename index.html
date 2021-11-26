@@ -1,17 +1,21 @@
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Induction Furnace</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+    <title>Induction Furnace - 3D Visualization</title>
 </head>
+
 <body>
-    <canvas class = "webgl"></canvas>
-    <script type = "module" src = "blinking_index.js"></script>
-    <form onsubmit="return false;">
-        <input class="button button3" type="number" id="myNumber" placeholder = "Threshold" value="" min="0" max="2000">
-        <input type="submit" value = "Enter" id="btnmyNumber">
-      
+    <form id="thresholdForm">
+        <input type="number" id="thresholdInput" required placeholder="Threshold" value="" min="0"
+            max="2000" />
+        <input type="submit" value="Submit" id="thresholdSubmitButton" />
     </form>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="main.js"></script>
 </body>
+
 </html>
